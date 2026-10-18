@@ -1,8 +1,9 @@
 pipeline {
   agent any
   environment {
-    IMAGE_NAME = 'agusmishima/jenkins-docker-app'
+    IMAGE_NAME = 'frostshwn/jenkins-docker-app'
     REGISTRY_CREDENTIALS = 'dockerhub-credentials'
+}
   }
   stages {
     stage('Checkout') { steps { checkout scm } }
